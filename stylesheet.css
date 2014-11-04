@@ -8,20 +8,18 @@ header{
   background-image: url("airplane.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 90%;
+  max-height: 90%;
 }
 
 #welcome{
   color: white;
-  font-size: 50pt;
-  position: relative;
-  max-width: 500px;
-  left: 10%;
-  top: 34%;
+  font-size: 66px;
+  max-width: 300px;
+  padding: 14%;
 }
 
 .location{
-  font-size: 20pt;
+  font-size: 25px;
 }
 
 .inline{
@@ -40,7 +38,7 @@ select{
   background-color: white;
   border: 1px solid #666666;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-  font-size: 25pt;
+  font-size: 33px;
   color: #666666;
 }
 
@@ -49,7 +47,7 @@ select{
   margin: auto;
   border: none;
   height: 75px;
-  font-size: 25pt;
+  font-size: 33px;
   color: white;
   background-color: #666666;
   border-radius: 10px;
@@ -67,16 +65,47 @@ select{
 
 #exists{
   text-align: center;
-  padding-top: 75px;
+  padding: 75px 0;
+  font-size: 45px;
+  color: white;
 }
 
 footer{
-  color: white;
-  height: 300px;
-  font-size: 20pt;
+  height: 250px;
   background-color: #567ca3;
   background: -webkit-linear-gradient(white, #567ca3);
        background: -o-linear-gradient(white, #567ca3);
      background: -moz-linear-gradient(white, #567ca3);
           background: linear-gradient(white, #567ca3);
+}
+
+@media screen and (max-width: 960px){
+  .inline{
+    display: block;
+    margin: 10px auto 30px;
+  }
+
+  #welcome{
+    font-size: 53px;
+    padding: 6%;
+  }
+}
+
+@media screen and (max-width: 480px){
+  #welcome{
+    font-size: 43px;
+  }
+
+  select{
+    font-size: 30px;
+  }
+
+  #button{
+    font-size: 27px;
+  }
+
+  #exists{
+    font-size: 35px;
+    padding-top: 100px;
+  }
 }
