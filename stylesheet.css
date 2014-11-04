@@ -7,15 +7,16 @@ body{
 header{
   background-image: url("airplane.jpg");
   background-repeat: no-repeat;
+  background-position: 0 30%;
   background-size: 100%;
-  max-height: 90%;
+  max-height: 35%;
 }
 
 #welcome{
   color: white;
   font-size: 66px;
-  max-width: 300px;
-  padding: 14%;
+  max-width: 500px;
+  padding: 3% 10%;
 }
 
 .location{
@@ -65,18 +66,8 @@ select{
 
 #exists{
   text-align: center;
-  padding: 75px 0;
   font-size: 45px;
-  color: white;
-}
-
-footer{
-  height: 250px;
-  background-color: #567ca3;
-  background: -webkit-linear-gradient(white, #567ca3);
-       background: -o-linear-gradient(white, #567ca3);
-     background: -moz-linear-gradient(white, #567ca3);
-          background: linear-gradient(white, #567ca3);
+  color: #666666;
 }
 
 @media screen and (max-width: 960px){
@@ -106,6 +97,5 @@ footer{
 
   #exists{
     font-size: 35px;
-    padding-top: 100px;
   }
 }
