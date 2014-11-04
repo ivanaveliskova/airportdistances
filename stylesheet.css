@@ -1,9 +1,14 @@
+/* **Tells the whole document to uses Open Sans, as a personal font choice
+and to not use default margins in the document. 
+I would normally also use a reset stylesheet to remove other presets,
+but since this was a smaller project, I kept the presets.** */
 body{
   font-family: "Open sans", sans-serif;
   margin: 0;
   color: #666666;
 }
 
+/* **Sets a background image in the header, and sets image to not show the entire image to save space** */
 header{
   background-image: url("airplane.jpg");
   background-repeat: no-repeat;
@@ -12,31 +17,39 @@ header{
   max-height: 35%;
 }
 
+/* **Sets a heading to welcome the user to the page and sets it against the background.
+The margin needed to be 0 to take away the preset of the h1 which was showing mostly in Firefox** */
 #welcome{
   color: white;
   font-size: 66px;
+  font-weight: normal;
   max-width: 500px;
   padding: 3% 10%;
   margin: 0;
 }
 
+/* **Sets the labels to display above the drop down menus rather than next to and sets a font size** */
 .location{
   font-size: 25px;
   display: block;
   margin-bottom: 10px;
 }
 
+/* **Sets the two drop down menus next to one another on the page for a cleaner look and set up** */
 .inline{
   display: inline-block;
   text-align: center;
   margin: 20px 7% 40px;
 }
 
+/* **Takes the form and sets a max width for the page so it can resize easily
+and for the buttons to center on the page** */
 form{
   max-width: 1024px;
   margin: 25px auto;
 }
 
+/* **Styles the select menu so it doesn't use the default styling and to be easy to read and see** */
 select{
   height: 75px;
   background-color: white;
@@ -46,6 +59,7 @@ select{
   color: #666666;
 }
 
+/* **Styles the submit button to be easily seen, and easy to click, especially on mobile devices** */
 #button{
   display: block;
   margin: auto;
@@ -58,6 +72,7 @@ select{
   box-shadow: 5px 5px 5px #464646;
 }
 
+/* **Small transformation on the submit button when clicked looks like it is being pressed down** */
 #button:active{
   -ms-transform: translate(3px, 3px);
   -webkit-transform: translate(3px, 3px);
@@ -65,30 +80,38 @@ select{
   box-shadow: 2px 2px 5px #464646;
 }
 
+/* **Removes outline on the button when it is clicked because it is a link** */
 #button:focus {
   outline: none;
 }
 
-#exists{
+/* **Aligns and sets the text for where the distance will show up** */
+#distances{
   text-align: center;
   font-size: 45px;
   font-weight: bold;
-  color: #666666;
 }
 
+/* **Tablet view** */
 @media screen and (max-width: 960px){
+
+  /* **Aligns everything above one another** */
   .inline{
     display: block;
     margin: 10px auto 30px;
   }
 
+  /* **Decreases the font size so it doesn't get lost below the heading** */
   #welcome{
     font-size: 53px;
     padding: 6%;
   }
 }
 
+/* **Mobile view** */
 @media screen and (max-width: 480px){
+  /* **Decreasing font sizes in order to be legible on a smaller screen.
+  The rest of the site will decrease gradually until the smaller screen is reached** */
   #welcome{
     font-size: 43px;
   }
@@ -101,7 +124,7 @@ select{
     font-size: 27px;
   }
 
-  #exists{
+  #distances{
     font-size: 35px;
   }
 }
