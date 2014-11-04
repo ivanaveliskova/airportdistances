@@ -15,8 +15,9 @@ header{
   color: white;
   font-size: 50pt;
   position: relative;
-  left: 5%;
-  top: 25%;
+  max-width: 500px;
+  left: 10%;
+  top: 34%;
 }
 
 .location{
