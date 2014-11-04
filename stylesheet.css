@@ -59,6 +59,8 @@ select{
 }
 
 #button:active{
+  -ms-transform: translate(3px, 3px);
+  -webkit-transform: translate(3px, 3px);
   transform: translate(3px, 3px);
   box-shadow: 2px 2px 5px #464646;
 }
