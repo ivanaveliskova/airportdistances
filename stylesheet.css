@@ -1,7 +1,7 @@
-/* **Tells the whole document to uses Open Sans, as a personal font choice
+/* **Tells the whole document to use Open Sans, as a personal font choice
 and to not use default margins in the document. 
 I would normally also use a reset stylesheet to remove other presets,
-but since this was a smaller project, I kept the presets.** */
+but since this was a smaller project, I kept the presets for the most part.** */
 body{
   font-family: "Open sans", sans-serif;
   margin: 0;
