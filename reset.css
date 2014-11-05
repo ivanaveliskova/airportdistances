@@ -1,0 +1,18 @@
+html, body, div, h1, h2, h3, h4, h5, h6, 
+p, a, img, form, label, article, footer, header {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+
+footer, header, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
