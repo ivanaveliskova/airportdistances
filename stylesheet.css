@@ -8,7 +8,8 @@ body{
   color: #666666;
 }
 
-/* **Sets a background image in the header, and sets image to not show the entire image to save space** */
+/* **Sets a background image in the header, and sets image to not show the entire image to save space
+Using a personal image I took rather than a stock photo since I don't have access to stock photos** */
 header{
   background-image: url("airplane.jpg");
   background-repeat: no-repeat;
