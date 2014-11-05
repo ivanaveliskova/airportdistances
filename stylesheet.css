@@ -45,7 +45,7 @@ The margin needed to be 0 to take away the preset of the h1 which was showing mo
 
 /* **Takes the form and sets a max width for the page so it can resize easily
 and for the buttons to center on the page** */
-form{
+#calcDistance{
   max-width: 960px;
   margin: 25px auto;
 }
