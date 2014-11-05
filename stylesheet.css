@@ -115,6 +115,7 @@ select{
   The rest of the site will decrease gradually until the smaller screen is reached** */
   #welcome{
     font-size: 43px;
+    text-align: center;
   }
 
   select{
