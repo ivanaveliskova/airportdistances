@@ -1,16 +1,14 @@
-/* **Tells the whole document to use Open Sans, as a personal font choice
-and to not use default margins in the document. 
-I would normally also use a reset stylesheet to remove other presets,
-but since this was a smaller project, I kept the presets for the most part.** */
-body{
+/***************************
+General Styles
+****************************/
+
+body {
+  color: #666666;
   font-family: "Open sans", sans-serif;
   margin: 0;
-  color: #666666;
 }
 
-/* **Sets a background image in the header, and sets image to not show the entire image to save space
-Using a personal image I took rather than a stock photo since I don't have access to stock photos** */
-header{
+header {
   background-image: url("airplane.jpg");
   background-repeat: no-repeat;
   background-position: 0 30%;
@@ -18,103 +16,100 @@ header{
   max-height: 35%;
 }
 
-/* **Sets a heading to welcome the user to the page and sets it against the background.
-The margin needed to be 0 to take away the preset of the h1 which was showing mostly in Firefox** */
-#welcome{
+select {
+  background-color: white;
+  border: 1px solid #666;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  color: #666666;
+  font-size: 33px;
+  height: 75px;
+}
+
+/***************************
+Component Styling
+****************************/
+
+.heading-1 {
   color: white;
   font-size: 66px;
   font-weight: normal;
+  margin: 0;
   max-width: 500px;
   padding: 3% 10%;
-  margin: 0;
   line-height: normal;
 }
 
 /* **Sets the labels to display above the drop down menus rather than next to and sets a font size** */
-.location{
-  font-size: 25px;
+.location {
   display: block;
+  font-size: 25px;
   margin-bottom: 10px;
 }
 
 /* **Sets the two drop down menus next to one another on the page for a cleaner look and set up** */
-.inline{
+.inline {
   display: inline-block;
+  margin: 20px 65px 40px 65px;
   text-align: center;
-  margin: 20px 65px 40px;
 }
 
 /* **Takes the form and sets a max width for the page so it can resize easily
 and for the buttons to center on the page** */
-#calcDistance{
-  max-width: 960px;
+.form-property {
   margin: 25px auto;
-}
-
-/* **Styles the select menu so it doesn't use the default styling and to be easy to read and see** */
-select{
-  height: 75px;
-  background-color: white;
-  border: 1px solid #666666;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  font-size: 33px;
-  color: #666666;
+  max-width: 960px;
 }
 
 /* **Styles the submit button to be easily seen, and easy to click, especially on mobile devices** */
-#button{
-  display: block;
-  margin: auto;
-  border: none;
-  height: 75px;
-  font-size: 33px;
-  color: white;
+.large-button {
   background-color: #666666;
+  border: none;
   border-radius: 10px;
   box-shadow: 5px 5px 5px #464646;
+  color: white;
+  display: block;
+  font-size: 33px;
+  height: 75px;
+  margin: auto;
 }
-
-/* **Small transformation on the submit button when clicked looks like it is being pressed down** */
-#button:active{
+.large-button:active {
+  box-shadow: 2px 2px 5px #464646;
   -ms-transform: translate(3px, 3px);
   -webkit-transform: translate(3px, 3px);
   transform: translate(3px, 3px);
-  box-shadow: 2px 2px 5px #464646;
 }
-
-/* **Removes outline on the button when it is clicked because it is a link** */
-#button:focus {
+.large-button:focus {
   outline: none;
 }
 
 /* **Aligns and sets the text for where the distance will show up** */
-#distances{
-  text-align: center;
+.output-text {
   font-size: 45px;
   font-weight: bold;
+  text-align: center;
 }
 
 /* **Tablet view** */
-@media screen and (max-width: 960px){
+@media all and (max-width: 960px){
 
   /* **Aligns everything above one another** */
-  .inline{
+  .inline {
     display: block;
     margin: 10px auto 30px;
   }
 
   /* **Decreases the font size so it doesn't get lost below the heading** */
-  #welcome{
+  .heading-1 {
     font-size: 53px;
     padding: 6%;
   }
 }
 
 /* **Mobile view** */
-@media screen and (max-width: 480px){
+@media all and (max-width: 480px){
   /* **Decreasing font sizes in order to be legible on a smaller screen.
   The rest of the site will decrease gradually until the smaller screen is reached** */
-  #welcome{
+  .heading-1 {
     font-size: 43px;
     text-align: center;
   }

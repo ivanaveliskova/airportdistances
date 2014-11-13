@@ -2,64 +2,49 @@
 
   <html lang="en">
     <head>
-
-      <!-- For mobile/tablet uses -->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      
-      <!-- Original flights javascript file -->
-      <script src="flights.js"></script>
-
-      <!-- Using Open Sans as a styling choice for font -->
       <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-
-      <!-- Stylesheet -->
       <link rel="stylesheet" type="text/css" href="reset.css">
       <link rel="stylesheet" type="text/css" href="stylesheet.css">
-
       <title>Distance Calculator</title>
-
     </head>
     <body>
 
     <!-- Header section -->
-    	<header>
-    		<h1 id="welcome">Discover how far you are</h1>
-    	</header>
+
+      <header>
+        <h1 class="heading-1">Discover how far you are</h1>
+      </header>
 
       <!-- Main content -->
 
-    	<form id="calcDistance">
-
-        <!-- Sectioning off the two places where you enter values -->
-  	   <section class="inline">
-  	  		<label class="location">I am departing from:</label>
-  	  		<!-- Using a selection as the user input to make up for potential human error in spelling or not knowing the 3 letter airport codes -->
+      <form id="calcDistance" class="form-property">
+       <section class="inline">
+          <label class="location">I am departing from:</label>
           <select id="leaving">
-  	  			<option value="NON">Choose Airport</option>
+            <option value="NON">Choose Airport</option>
             <option value="JFK">New York &mdash; JFK</option>
             <option value="LAS">Las Vegas &mdash; LAS</option>
             <option value="LAX">Los Angeles &mdash; LAX</option>
             <option value="PDX">Portland &mdash; PDX</option>
-  	  		</select>
-  		  </section>
-        <!-- Sectioning off the two places where you enter values -->
-  		  <section class="inline">
-      		<label class="location">I am going to:</label>
-    	  		<select id="going">
-    	  			<option value="NON">Choose Airport</option>
+          </select>
+        </section>
+        <section class="inline">
+          <label class="location">I am going to:</label>
+            <select id="going">
+              <option value="NON">Choose Airport</option>
               <option value="JFK">New York &mdash; JFK</option>
               <option value="LAS">Las Vegas &mdash; LAS</option>
               <option value="LAX">Los Angeles &mdash; LAX</option>
               <option value="PDX">Portland &mdash; PDX</option>
-    	  		</select>
-    		</section>
-        <!-- Sumbits to a JS file which throws out the distance -->
-    		<input type="submit" value="Calculate Distance" id="button"/>
-    	</form>
+            </select>
+        </section>
+        <input type="submit" value="Calculate Distance" id="button" class="large-button"/>
+      </form>
       <!-- The output of the form -->
-  	  <p id="distances">______ miles away</p>
-      <!-- Javascript and jquery -->
-    	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+      <p id="distances" class="output-text">______ miles away</p>
+
+      <script src="flights.js"></script>
     	<script type="text/javascript" src="javascript.js"></script>
     </body>
   </html>
